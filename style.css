@@ -1,0 +1,142 @@
+/* Geral */
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    font-family: Arial, sans-serif;
+    color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    text-align: center;
+    margin: 30px;
+    padding: 0;
+}
+
+/* Início Menu */
+nav {
+    background-color: #003366; /* Azul Marinho */
+    display: flex;
+    align-items: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: linear-gradient(to bottom, #003366, #001f3d); /* Azul Marinho */
+    border-bottom: 2px solid #001f3d;
+}
+
+nav a:last-child {
+    margin-left: auto;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: padding 0.2s ease-in-out;
+}
+
+a:hover {
+    background-image: linear-gradient(to top, #001f3d, #003366);
+}
+
+nav.shrink, a.shrink {
+    padding: 8px 20px;
+}
+
+/* Fim Menu */
+/* Conteúdo */
+#portfolio {
+    background-color: #444; /* Cinza escuro */
+    padding-top: 30vh;
+    height: 60vh;
+    color: #fff;
+}
+
+#orcamento {
+    background-color: #eee; /* Cinza claro */
+    padding-top: 30vh;
+    height: 60vh;
+}
+
+#comentarios {
+    background-color: #444; /* Cinza escuro */
+    padding-top: 30vh;
+    height: 60vh;
+    color: #fff;
+}
+
+/* Fim Conteúdo */
+/* Início Modal */
+dialog {
+    width: 40%;
+    min-width: 300px;
+    padding: 20px;
+    padding-top: 0px;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button {
+    background-color: #003366; /* Azul Marinho */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #001f3d; /* Azul mais escuro */
+}
+
+button[type="button"] {
+    background-color: #f5b049; /* Amarelo claro */
+}
+
+button[type="button"]:hover {
+    background-color: #ac7727; /* Amarelo mais escuro */
+}
+
+dialog button {
+    margin-top: 20px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+dialog p.erro {
+    padding: 10px;
+    background-color: rgb(255, 190, 190);
+    color: rgb(86, 2, 2);
+    text-align: center;
+}
+
+/* Fim Modal */
+/* Início Footer */
+footer {
+    background-color: #222; /* Cinza escuro */
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Fim Footer */
