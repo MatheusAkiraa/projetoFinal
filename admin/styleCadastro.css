@@ -1,0 +1,108 @@
+/* Estilo Básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Menu lateral com efeito hover */
+.menuLateral {
+    width: 200px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    left: -220px; /* Inicialmente escondido fora da tela */
+    transition: left 0.3s ease-in-out; /* Transição suave */
+}
+
+.menuLateral a {
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.menuLateral a:hover {
+    color: #ddd;
+}
+
+/* Mostrar o menu lateral quando o mouse estiver sobre o body */
+body:hover .menuLateral {
+    left: 0; /* Menu visível quando o mouse passa sobre a área do body */
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+header a {
+    color: rgb(27, 102, 168);
+    font-size: 20px;
+}
+
+header a:hover {
+    color: rgb(7, 60, 105);
+}
+
+form {
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+form label {
+    display: inline-block;
+    width: 25%;
+    margin: 5px 0;
+}
+
+form input {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="reset"] {
+    background-color: #f5b049;
+}
+
+button[type="submit"]:hover {
+    background-color: #247126;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #1b66a8;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table td {
+    text-align: center;
+}

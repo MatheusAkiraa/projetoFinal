@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+    <script src="scriptCadastro.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="menuLateral">
+            <h2>Menu</h2>
+            <a href="index.html">Cadastro de Caminhões</a>
+            <a href="funcionarios.html">Cadastro de Funcionários</a>
+            <a href="vendas.html">Cadastro de Vendas</a>
+        </nav>
+        <main>
+            <header>
+                <a href="#" id="logout">Sair</a>
+            </header>
+
+            <section id="cadastro">
+                <h2>Cadastro de Funcionários</h2>
+                <form id="formFuncionario">
+                    <label for="nomeFuncionario">Nome:</label>
+                    <input type="text" id="nomeFuncionario" name="nomeFuncionario"><br>
+
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento"><br>
+
+                    <label for="salario">Salário:</label>
+                    <input type="text" id="salario" name="salario"><br>
+
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Cadastrar Funcionário</button>
+                </form>
+
+                <h3>Lista de Funcionários Cadastrados</h3>
+                <table id="tabelaFuncionarios">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Data de Nascimento</th>
+                            <th>Salário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Funcionários serão listados aqui -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

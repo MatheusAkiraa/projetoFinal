@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Caminhões</title>
+    <link rel="stylesheet" href="styleCadastro.css">
+    <script src="scriptCadastro.js"></script>
+</head>
+<body>
+    <div>
+        <nav class="menuLateral">
+            <h2>Menu</h2>
+            <a href="index.html">Cadastro de Caminhões</a>
+            <a href="funcionarios.html">Cadastro de Funcionários</a>
+            <a href="vendas.html">Cadastro de Vendas</a>
+        </nav>
+        <main>
+            <header>
+                <a href="#" id="logout">Sair</a>
+            </header>
+
+            <section id="cadastro">
+                <h2>Cadastro de Caminhões</h2>
+                <form id="formCaminhao">
+                    <label for="ano">Ano de Fabricação:</label>
+                    <input type="number" id="ano" name="ano"><br>
+
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo"><br>
+
+                    <label for="status">Status:</label>
+                    <input type="text" id="status" name="status"><br>
+
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Cadastrar Caminhão</button>
+                </form>
+
+                <h3>Lista de Caminhões Cadastrados</h3>
+                <table id="tabelaCaminhoes">
+                    <thead>
+                        <tr>
+                            <th>Ano</th>
+                            <th>Modelo</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Caminhões serão listados aqui -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
